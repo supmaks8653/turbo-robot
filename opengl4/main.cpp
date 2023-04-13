@@ -37,7 +37,20 @@ void draw(int val) {
 	//std::cout << val;
 	glutTimerFunc(tickTime, draw, tickTime);
 }
-
+const int windowWidth = 1000;
+const int windowHeight = 1000;
+const int halfWidth = windowWidth / 2;
+const int halfHeight = windowHeight / 2;
+void mouseFunction(int button, int state, int x, int y) {
+	std::cout << "Got mouse: " << x << " ; " << y << '\n';
+	int offsetX = x - halfWidth;
+	int offsetY = windowHeight - y - halfHeight;
+	float mx = float(offsetX) / halfHeight;
+	float my = float(offsetY) / halfHeight;
+	std::cout << "Resized mouse: " << mx << " ; " << my << '\n';
+	point moveTo = point(mx, my);
+	f.setPlayerTarget(moveTo);
+}
 int frame = 0;
 void drawFrame(int val) {
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -51,8 +64,9 @@ void drawFrame(int val) {
 }
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
-	glutInitWindowSize(1000, 1000);
+	glutInitWindowSize(windowWidth, windowHeight);
 	glutCreateWindow("Window");
+	glutMouseFunc(mouseFunction);
 	setup();
 	glutTimerFunc(1, draw, 1);
 	glutMainLoop();

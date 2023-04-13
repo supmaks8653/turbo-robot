@@ -59,7 +59,6 @@ void entity::getDamaged(float damage) {
 void entity::reCreateHealth() {
 	float percent = getPercentHealth();
 	healthDrawable = createResized(drawableCreator::createHealthDrawable(DEFAULT_HEALTH_COLOR, percent), size.getBase() / DEFAULT_HEALTH_SCALE);
-	std::cout << "Health " << percent << '\n';
 }
 void entity::getHealed(float heal) {
 	hp.heal(heal);
@@ -99,10 +98,12 @@ float entity::getHealth() {
 	return hp.getCurrent();
 }
 void entity::chooseAndMove(std::vector<point> targets) {
-	std::cout << "speed " << speed.getValue() << '\n';
 	point movement = path.getNewPos(targets, pos, speed.getValue(), visionRange.getValue(), attackRange.getValue());
 	pos = movement;
 }
 point entity::getPos() {
 	return pos;
+}
+float entity::getRange() {
+	return attackRange.getValue();
 }

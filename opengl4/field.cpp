@@ -50,12 +50,18 @@ void field::update() {
 	damage();
 	removeDead();
 	moveEnemies();
+	movePlayer();
 	createDrawStack();
 	draw();
 }
 void field::damage() {
 	for (int i = 0; i < enemies.size(); i++) {
 		 enemies[i].getDamaged(player.getPower());
+		 float range = enemies[i].getRange();
+		 range *= range;
+		 if (enemies[i].getPos().distanceNS(player.getPos()) <= range) {
+			 player.getDamaged(enemies[i].getPower() / 10.0f);
+		 }
 	}
 }
 
@@ -81,4 +87,16 @@ void field::moveEnemies() {
 	for (int i = 0; i < enemies.size(); i++) {
 		enemies[i].chooseAndMove(targets);
 	}
+}
+void field::setPlayerTarget(point p) {
+	playerTarget = p;
+	playerTargetExists = true;
+}
+std::vector<point> field::getPlayerTargetPosition() {
+	std::vector<point> result = std::vector<point>();
+	result.push_back(playerTarget);
+	return result;
+}
+void field::movePlayer() {
+	if(playerTargetExists) player.chooseAndMove(getPlayerTargetPosition());
 }

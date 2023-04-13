@@ -7,7 +7,6 @@ point pathing::getPathTowards(point start, point end, float speed, float range) 
 	if (direction.lengthNS() <= movePerTick.lengthNS()) return point();
 	point needsDirection = direction.minus(norm.mult(range));
 	float needsToMove = needsDirection.lengthNS();
-	std::cout << "Needs to move " << needsToMove << '\n';
 	float speedSquared = speed * speed;
 	if (needsToMove <= speedSquared) {
 		return needsDirection;

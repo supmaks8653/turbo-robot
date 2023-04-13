@@ -15,42 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="point.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="stat.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="health.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="entity.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="drawable.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="printer.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="field.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="helperFunctions.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="drawableCreators.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="offsetDrawable.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="pathing.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="animation.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -60,45 +27,72 @@
     <ClCompile Include="bezier.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="drawable.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="drawableCreators.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="field.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="health.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="helperFunctions.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="offsetDrawable.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="pathing.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="point.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="printer.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="stat.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="point.h">
+    <ClInclude Include="animation.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="entity.h">
+    <ClInclude Include="animations.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="statChange.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="stat.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="health.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="drawable.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="singleDrawable.h">
+    <ClInclude Include="bezier.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="color.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="printer.h">
+    <ClInclude Include="drawable.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="drawableCreators.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="field.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="helperFunctions.h">
+    <ClInclude Include="health.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="drawableCreators.h">
+    <ClInclude Include="helperFunctions.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="offsetDrawable.h">
@@ -107,13 +101,19 @@
     <ClInclude Include="pathing.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="animation.h">
+    <ClInclude Include="point.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="animations.h">
+    <ClInclude Include="printer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="bezier.h">
+    <ClInclude Include="singleDrawable.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="stat.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="statChange.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

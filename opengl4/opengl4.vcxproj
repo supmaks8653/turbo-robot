@@ -127,6 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="animation.cpp" />
     <ClCompile Include="animations.cpp" />
     <ClCompile Include="bezier.cpp" />
@@ -142,9 +145,6 @@
     <ClCompile Include="point.cpp" />
     <ClCompile Include="printer.cpp" />
     <ClCompile Include="stat.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation.h" />

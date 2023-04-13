@@ -5,6 +5,7 @@ void offsetDrawable::drawFirst() {
 	d.draw(offset);
 }
 void offsetDrawable::drawSecond() {
+	healthCircle.draw(healthOffset);
 	health.draw(healthOffset);
 	healthCircle.drawHealth(healthOffset);
 }

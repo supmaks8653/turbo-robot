@@ -30,6 +30,7 @@ public:
 	void getHealed(float heal);
 	float getPower();
 	point getPos();
+	float getRange();
 	void printSpeed();
 	void printPower();
 	void printHealth();
