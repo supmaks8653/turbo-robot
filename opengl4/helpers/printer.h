@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "field.h"
+#include "../field.h"
 class printer {
 public:
 	static void print(drawable d);

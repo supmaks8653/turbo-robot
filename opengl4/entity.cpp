@@ -1,5 +1,5 @@
 #include "entity.h"
-#include "printer.h"
+#include "helpers/printer.h"
 
 entity::entity(float maxHealth, float baseSpeed, float basePower, float x, float y, std::vector<singleDrawable> drawables,
 	float _size, int zOrder, float _visionRange, float _attackRange) :

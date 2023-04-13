@@ -1,6 +1,6 @@
 #pragma once
-#include "point.h"
-#include "stat.h"
+#include "../baseClasses/point.h"
+#include "../baseClasses/stat.h"
 #include <vector>
 class pathing {
 	point target;

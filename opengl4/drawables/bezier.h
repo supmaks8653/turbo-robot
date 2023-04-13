@@ -1,5 +1,5 @@
 #pragma once
-#include "point.h"
+#include "../baseClasses/point.h"
 #include <vector>
 class bezier {
 	static point partPoint(point start, point end, float part);

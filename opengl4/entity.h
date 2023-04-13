@@ -1,9 +1,9 @@
 #pragma once
-#include "health.h"
-#include "drawable.h"
-#include "helperFunctions.h"
-#include "offsetDrawable.h"
-#include "pathing.h"
+#include "baseClasses/health.h"
+#include "drawables/drawable.h"
+#include "helpers/helperFunctions.h"
+#include "drawables/offsetDrawable.h"
+#include "helpers/pathing.h"
 class entity {
 	pathing path;
 	gstat visionRange;

@@ -1,7 +1,8 @@
 #pragma once
 
-#include "point.h"
-#include "color.h"
+#include "../baseClasses/point.h"
+#include "../baseClasses/color.h"
+
 struct singleDrawable {
 	point p;
 	color c;

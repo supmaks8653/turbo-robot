@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <GL/freeglut.h>
-#include "printer.h"
-#include "animations.h"
+#include "helpers/printer.h"
+#include "animations/animations.h"
 
 entity createEnemy(float x, float y) {
 	std::vector<singleDrawable> d = drawableCreator::createEnemyDrawable();

@@ -1,5 +1,5 @@
 #include "health.h"
-#include "printer.h"
+#include "../helpers/printer.h"
 
 health::health(float max) : values(max) {
 	current = max;

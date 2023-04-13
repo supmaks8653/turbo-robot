@@ -130,40 +130,40 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="animation.cpp" />
-    <ClCompile Include="animations.cpp" />
-    <ClCompile Include="bezier.cpp" />
-    <ClCompile Include="drawable.cpp" />
-    <ClCompile Include="drawableCreators.cpp" />
+    <ClCompile Include="animations\animation.cpp" />
+    <ClCompile Include="animations\animations.cpp" />
+    <ClCompile Include="baseClasses\health.cpp" />
+    <ClCompile Include="baseClasses\point.cpp" />
+    <ClCompile Include="baseClasses\stat.cpp" />
+    <ClCompile Include="drawables\bezier.cpp" />
+    <ClCompile Include="drawables\drawable.cpp" />
+    <ClCompile Include="drawables\drawableCreators.cpp" />
+    <ClCompile Include="drawables\offsetDrawable.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="field.cpp" />
-    <ClCompile Include="health.cpp" />
-    <ClCompile Include="helperFunctions.cpp" />
+    <ClCompile Include="helpers\helperFunctions.cpp" />
+    <ClCompile Include="helpers\pathing.cpp" />
+    <ClCompile Include="helpers\printer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="offsetDrawable.cpp" />
-    <ClCompile Include="pathing.cpp" />
-    <ClCompile Include="point.cpp" />
-    <ClCompile Include="printer.cpp" />
-    <ClCompile Include="stat.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="animation.h" />
-    <ClInclude Include="animations.h" />
-    <ClInclude Include="bezier.h" />
-    <ClInclude Include="color.h" />
-    <ClInclude Include="drawable.h" />
-    <ClInclude Include="drawableCreators.h" />
+    <ClInclude Include="animations\animation.h" />
+    <ClInclude Include="animations\animations.h" />
+    <ClInclude Include="baseClasses\color.h" />
+    <ClInclude Include="baseClasses\health.h" />
+    <ClInclude Include="baseClasses\point.h" />
+    <ClInclude Include="baseClasses\stat.h" />
+    <ClInclude Include="baseClasses\statChange.h" />
+    <ClInclude Include="drawables\bezier.h" />
+    <ClInclude Include="drawables\drawable.h" />
+    <ClInclude Include="drawables\drawableCreators.h" />
+    <ClInclude Include="drawables\offsetDrawable.h" />
+    <ClInclude Include="drawables\singleDrawable.h" />
     <ClInclude Include="entity.h" />
     <ClInclude Include="field.h" />
-    <ClInclude Include="health.h" />
-    <ClInclude Include="helperFunctions.h" />
-    <ClInclude Include="offsetDrawable.h" />
-    <ClInclude Include="pathing.h" />
-    <ClInclude Include="point.h" />
-    <ClInclude Include="printer.h" />
-    <ClInclude Include="singleDrawable.h" />
-    <ClInclude Include="stat.h" />
-    <ClInclude Include="statChange.h" />
+    <ClInclude Include="helpers\helperFunctions.h" />
+    <ClInclude Include="helpers\pathing.h" />
+    <ClInclude Include="helpers\printer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
